@@ -31,3 +31,23 @@ while(i < listaSpesa.length){
     i++;
     
 }
+
+const textField = document.querySelector('input');
+let newItem = textField.value;
+
+
+const button = document.querySelector('button');
+
+console.log(textField , button);
+
+button.addEventListener('click', function(){
+
+        listaSpesa.push(newItem);    
+        
+        container.innerHTML += `
+            <div>${newItem}</div>
+        `;
+
+        console.log(listaSpesa);
+    }
+);
