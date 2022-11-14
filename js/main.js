@@ -23,6 +23,10 @@ let i = 0;
 while(i < listaSpesa.length){
 
     console.log(listaSpesa[i]);
+
+    container.innerHTML += `
+        <div>${listaSpesa[i]}</div>
+    `;
     
     i++;
     
