@@ -33,21 +33,23 @@ while(i < listaSpesa.length){
 }
 
 const textField = document.querySelector('input');
-let newItem = textField.value;
 
-
+// console.log(newItem);
 const button = document.querySelector('button');
 
 console.log(textField , button);
 
 button.addEventListener('click', function(){
 
-        listaSpesa.push(newItem);    
+        listaSpesa.push(textField.value);    
         
+        
+        console.log(listaSpesa);
+
         container.innerHTML += `
-            <div>${newItem}</div>
+            <div>${textField.value}</div>
         `;
 
-        console.log(listaSpesa);
     }
 );
+    
