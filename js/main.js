@@ -7,13 +7,23 @@ const container = document.getElementById('wishlist');
 console.log(listaSpesa , container);
 
 // Stampare gli elementi tramite ciclo for
-for(let i = 0; i < listaSpesa.length; i++){
+// for(let i = 0; i < listaSpesa.length; i++){
+
+//     console.log(listaSpesa[i]);
+
+//     container.innerHTML += `
+//         <div>${listaSpesa[i]}</div>
+//     `;
+
+// }
+
+// Stampare gli elementi tramite ciclo while
+let i = 0;
+
+while(i < listaSpesa.length){
 
     console.log(listaSpesa[i]);
-
-    container.innerHTML += `
-        <div>${listaSpesa[i]}</div>
-    `;
-
+    
+    i++;
+    
 }
-// Stampare gli elementi tramite ciclo while
